@@ -26,8 +26,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} h-svh overflow-y-auto`}
       >
+        <header>
+          <nav className="flex justify-between items-center p-4 bg-slate-950 text-white">
+            <a className="text-2xl font-bold" href="/">
+              Blog
+            </a>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
