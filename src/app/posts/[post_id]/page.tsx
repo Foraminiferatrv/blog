@@ -13,7 +13,7 @@ import { BlockNoteView } from "@blocknote/shadcn";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import type { Post } from "@/app/models/posts.model";
 import Loading from "../loading";
-import { BlockNoteEditor, PartialBlock } from "@blocknote/core";
+import { Block, BlockNoteEditor, PartialBlock } from "@blocknote/core";
 import { Separator } from "@/components/ui/separator";
 
 type Props = {
@@ -43,7 +43,7 @@ export default function Post({ params: { post_id } }: Props) {
         try {
           setEditorState(JSON.parse(data.content));
         } catch {
-          setEditorState("");
+          setEditorState("" as any);
         }
       });
     }

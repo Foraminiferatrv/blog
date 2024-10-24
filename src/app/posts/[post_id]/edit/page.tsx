@@ -55,7 +55,7 @@ export default function EditPost({ params: { post_id } }: Props) {
         try {
           setEditorState(JSON.parse(data.content));
         } catch {
-          setEditorState("");
+          setEditorState("" as any);
         }
 
         setPostDescription(data.shortDescription);
