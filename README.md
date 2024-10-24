@@ -1,8 +1,16 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# Frontend setup on local machine
+ 1. clone githup repository
+ 2. create .env file in the root of the project and paste backend url in `NEXT_PUBLIC_API_URL=` variable as shown in  `.env.example` file
+ 3. install all dependencies with `pnpm install`
+ 4. run `pnpm dev`
+
 ## Getting Started
 
 First, run the development server:
+
+
 
 ```bash
 npm run dev
